@@ -65,7 +65,7 @@ const featuresItems: Feature[] = [
 
 const heroHeadline = (
     <>
-      ClubHub <span className="text-primary">AI</span>
+      ClubHub <span className="bg-gradient-to-r from-primary to-emerald-600 bg-clip-text text-transparent">AI</span>
     </>
   );
 
