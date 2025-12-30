@@ -17,7 +17,7 @@ interface HowItWorksProps {
 
 export default function HowItWorks({ title, description, steps }: HowItWorksProps) {
   return (
-    <Section id="how-it-works" className="border-t">
+    <Section id="how-it-works" className="border-t border-white/10">
       <div className="mx-auto max-w-5xl text-center">
         <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl animate-fade-in-up">
           {title}
@@ -32,7 +32,7 @@ export default function HowItWorks({ title, description, steps }: HowItWorksProp
             const Icon = step.icon;
             return (
               <div key={step.title} className="relative flex animate-fade-in-up" style={{ animationDelay: `${0.4 + i * 0.2}s` }}>
-                <Card className="flex flex-grow flex-col items-center text-center rounded-xl bg-transparent p-6">
+                <Card className="flex flex-grow flex-col items-center text-center rounded-xl bg-transparent p-6 border-0 shadow-none">
                   <div className="flex h-12 w-12 items-center justify-center rounded-lg border bg-primary/10 text-primary">
                     <Icon className="h-6 w-6" />
                   </div>

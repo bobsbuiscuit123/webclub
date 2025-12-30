@@ -28,8 +28,8 @@ export default function Hero({ badge, headline, subheadline, codeLine, primaryCt
 
   return (
     <Section className="relative overflow-hidden pt-24 sm:pt-32 md:pt-40">
-        <div className="absolute inset-0 -z-10 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(to_bottom,white_10%,transparent_70%)] animate-fade-in"></div>
-        <div className="absolute -top-1/2 left-1/2 -z-20 h-[1000px] w-[1000px] -translate-x-1/2 rounded-full bg-primary/10 blur-[100px] animate-fade-in"></div>
+       <div className="absolute inset-0 -z-10 bg-grid bg-center [mask-image:linear-gradient(to_bottom,white_1%,transparent_50%)] animate-fade-in"></div>
+       <div className="absolute -top-1/2 left-1/2 -z-20 h-[1000px] w-[1000px] -translate-x-1/2 rounded-full bg-[hsl(var(--gradient-accent))]/10 blur-[100px] animate-fade-in"></div>
       
       <div className="mx-auto max-w-4xl text-center">
         <Badge variant="outline" className="mb-4 border-primary/30 bg-primary/10 text-primary animate-fade-in-up [animation-delay:0.2s]">

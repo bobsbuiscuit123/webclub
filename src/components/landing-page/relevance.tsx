@@ -10,9 +10,9 @@ interface RelevanceProps {
 
 export default function Relevance({ badge, title, points }: RelevanceProps) {
   return (
-    <Section id="relevance" className="border-t">
+    <Section id="relevance" className="border-t border-white/10">
       <div className="mx-auto max-w-4xl">
-        <div className="mt-12 rounded-2xl border border-primary/20 bg-muted/30 p-8 backdrop-blur-sm animate-fade-in-up [animation-delay:0.2s] relative">
+        <div className="mt-12 rounded-2xl border border-primary/20 bg-card/50 p-8 backdrop-blur-sm animate-fade-in-up [animation-delay:0.2s] relative">
             <div className="absolute -left-px top-8 h-8 w-px bg-primary shadow-[0_0_12px_hsl(var(--primary))]"></div>
             <Badge variant="outline" className="mb-4 border-primary/30 bg-primary/10 text-primary font-mono text-xs">
                 {badge}

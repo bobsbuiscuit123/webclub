@@ -100,7 +100,8 @@ const heroHeadline = (
 
 export default function LandingPage() {
   return (
-    <div className="flex min-h-screen w-full flex-col bg-background text-foreground">
+    <div className="flex min-h-screen w-full flex-col bg-gradient-to-b from-[hsl(var(--gradient-start))] to-[hsl(var(--gradient-end))] text-foreground">
+      <div className="pointer-events-none absolute inset-0 z-0 bg-noise"></div>
       <Header />
       <main className="flex-1">
         <Hero {...copy.hero} headline={heroHeadline} />
