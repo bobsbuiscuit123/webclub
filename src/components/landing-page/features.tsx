@@ -18,7 +18,7 @@ export default function Features({ title, description, features }: FeaturesProps
   return (
     <Section id="features">
       <div className="mx-auto max-w-5xl text-center">
-        <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl font-headline">
+        <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
           {title}
         </h2>
         <p className="mt-4 text-lg text-muted-foreground">
@@ -29,7 +29,7 @@ export default function Features({ title, description, features }: FeaturesProps
         {features.map((feature) => {
           const Icon = feature.icon;
           return (
-            <Card key={feature.title} className="flex flex-col items-center text-center">
+            <Card key={feature.title} className="flex flex-col items-center text-center rounded-xl bg-card/60 backdrop-blur-sm shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl">
               <CardHeader>
                 <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
                   <Icon className="h-8 w-8 text-primary" />

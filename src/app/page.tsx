@@ -8,6 +8,7 @@ import { PenSquare, ListTodo, SearchCode, Layers3 } from 'lucide-react';
 
 const copy = {
   hero: {
+    badge: "AI Workflow Automation",
     headline: "ClubHub AI",
     subheadline: "AI workflows that turn school communication tasks into actions.",
     description: "Originally built for school clubs, designed to plug into existing school communication platforms.",
@@ -15,6 +16,7 @@ const copy = {
     secondaryCta: "Contact",
   },
   demo: {
+    label: "Live Demo",
     title: "Product Demo",
     videoUrl: "https://www.youtube.com/embed/siH9rm05vBM",
     caption: "Shows task-based AI generating announcements and automating admin workflows.",
