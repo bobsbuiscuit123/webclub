@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --background: 210 40% 96.1%;
+    --background: 210 40% 98%;
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -33,46 +33,46 @@
     --ring: 142.1 76.2% 36.3%;
 
     --radius: 0.75rem;
-
-    --gradient-start: 160 50% 12%;
-    --gradient-mid: 169 70% 14%;
-    --gradient-end: 180 80% 10%;
-    --gradient-accent: 160 60% 30%;
+    
+    --gradient-start: 150 50% 95%;
+    --gradient-mid: 160 60% 92%;
+    --gradient-end: 170 55% 90%;
+    --gradient-accent: 155 70% 85%;
   }
 
   .dark {
-    --background: 168 70% 6%;
-    --foreground: 0 0% 98%;
+    --background: 150 50% 95%;
+    --foreground: 150 25% 15%;
 
-    --card: 170 50% 10%;
-    --card-foreground: 0 0% 98%;
+    --card: 160 50% 90%;
+    --card-foreground: 150 25% 15%;
 
-    --popover: 168 80% 4%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 150 50% 95%;
+    --popover-foreground: 150 25% 15%;
 
-    --primary: 150 70% 45%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 142.1 76.2% 36.3%;
+    --primary-foreground: 355.7 100% 97.3%;
 
-    --secondary: 165 30% 15%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 160 50% 90%;
+    --secondary-foreground: 150 25% 25%;
 
-    --muted: 170 20% 15%;
-    --muted-foreground: 170 10% 65%;
+    --muted: 160 50% 90%;
+    --muted-foreground: 150 20% 45%;
 
-    --accent: 165 40% 20%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 160 60% 85%;
+    --accent-foreground: 150 25% 15%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
 
-    --border: 165 35% 22%;
-    --input: 165 35% 22%;
-    --ring: 150 70% 50%;
+    --border: 150 30% 80%;
+    --input: 150 30% 80%;
+    --ring: 142.1 76.2% 36.3%;
 
-    --gradient-start: 180 80% 10%;
-    --gradient-mid: 169 70% 14%;
-    --gradient-end: 160 50% 12%;
-    --gradient-accent: 160 60% 30%;
+    --gradient-start: 150 50% 95%;
+    --gradient-mid: 160 60% 92%;
+    --gradient-end: 170 55% 90%;
+    --gradient-accent: 155 70% 85%;
   }
 }
 
