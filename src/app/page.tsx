@@ -9,10 +9,9 @@ import { PenSquare, ListTodo, SearchCode, Layers3 } from 'lucide-react';
 const copy = {
   hero: {
     badge: "AI Workflow Automation",
-    headline: "ClubHub AI",
     subheadline: "AI workflows that turn school communication tasks into actions.",
     description: "Originally built for school clubs, designed to plug into existing school communication platforms.",
-    primaryCta: "Watch the 90-second demo",
+    primaryCta: "Watch the 30-second demo",
     secondaryCta: "Contact",
   },
   demo: {
@@ -64,12 +63,18 @@ const featuresItems: Feature[] = [
       },
 ];
 
+const heroHeadline = (
+    <>
+      ClubHub <span className="text-primary">AI</span>
+    </>
+  );
+
 export default function LandingPage() {
   return (
     <div className="flex min-h-screen w-full flex-col bg-background text-foreground">
       <Header />
       <main className="flex-1">
-        <Hero {...copy.hero} />
+        <Hero {...copy.hero} headline={heroHeadline} />
         <Demo {...copy.demo} />
         <Features title={copy.features.title} description={copy.features.description} features={featuresItems} />
         <Relevance {...copy.relevance} />

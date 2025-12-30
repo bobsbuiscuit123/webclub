@@ -4,10 +4,11 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import Section from './section';
 import { Badge } from '@/components/ui/badge';
+import type { ReactNode } from 'react';
 
 interface HeroProps {
   badge: string;
-  headline: string;
+  headline: ReactNode;
   subheadline: string;
   description: string;
   primaryCta: string;
