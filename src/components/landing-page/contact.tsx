@@ -11,7 +11,7 @@ interface ContactProps {
 }
 
 export default function Contact({ title, description, email, cta }: ContactProps) {
-  const mailtoLink = `mailto:${email}?subject=ClubHub%20AI%20–%20Partnership%20Conversation`;
+  const mailtoLink = `mailto:${email}?subject=ClubHub%20AI%20–%20Walkthrough%20Request`;
 
   return (
     <Section id="contact" className="border-t border-white/10">

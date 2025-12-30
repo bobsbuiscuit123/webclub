@@ -13,7 +13,7 @@ export function HeroVisualization() {
                 <User className="h-5 w-5 text-primary" />
                 <h3 className="font-mono text-sm text-foreground">USER_INTENT</h3>
             </div>
-            <p className="mt-2 text-sm text-muted-foreground">"Draft a reminder about the science club meeting..."</p>
+            <p className="mt-2 text-sm text-muted-foreground">"Draft a reminder about dues and send it to members."</p>
         </Card>
 
         <ArrowRight className="h-8 w-8 text-primary/50" />
@@ -24,7 +24,7 @@ export function HeroVisualization() {
                 <Bot className="h-5 w-5 text-primary" />
                 <h3 className="font-mono text-sm text-foreground">AI_ACTION</h3>
             </div>
-            <p className="mt-2 text-sm text-muted-foreground">[TASK]: Send Announcement</p>
+            <p className="mt-2 text-sm text-muted-foreground">[TASK]: Draft + Send Announcement</p>
         </Card>
 
         {/* Glows */}

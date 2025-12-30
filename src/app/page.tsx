@@ -11,10 +11,10 @@ import { PenSquare, ListTodo, SearchCode, Layers3, BotMessageSquare, FileCheck2,
 const copy = {
   hero: {
     badge: "Task-Based AI Workflows",
-    subheadline: "AI workflows that turn school communication tasks into actions.",
-    codeLine: "> Turn intent into action",
+    subheadline: "AI workflows that turn everyday school communication into completed tasks.",
+    codeLine: "› Turn intent into action",
     primaryCta: "Watch the 30-second demo",
-    secondaryCta: "Contact",
+    secondaryCta: "Request a walkthrough",
   },
   credibility: {
     items: [
@@ -31,7 +31,7 @@ const copy = {
       {
         icon: Search,
         title: "Centralized Intelligence",
-        description: "Answers questions buried in your communication logs."
+        description: "Surfaces answers from past messages, events, and announcements."
       }
     ]
   },
@@ -50,19 +50,19 @@ const copy = {
     description: "ClubHub AI streamlines communication with powerful, task-based workflows.",
   },
   relevance: {
-    badge: "Design Insight",
-    title: "Built for clubs. Relevant for broader school communication.",
+    badge: "Built to scale",
+    title: "Built for clubs. Designed to scale across school communication.",
     points: [
-      "The core value is the workflow and orchestration layer, not just the AI model.",
-      "Can be integrated as a self-contained module into your existing platform.",
-      "Complements existing messaging and communication features without replacing them."
+      "Designed around real workflows used daily by student leaders and advisors.",
+      "Turns requests into actions — not more messages.",
+      "Works for clubs today and broader school use cases tomorrow."
     ],
   },
   contact: {
     title: "Interested in a quick walkthrough?",
-    description: "I can share a live demo and explain how the AI workflows could integrate into an existing platform.",
-    email: "yourname@email.com",
-    cta: "Request a meeting",
+    description: "Happy to share a short demo and discuss how these workflows could apply within your platform.",
+    email: "team@clubhub.ai",
+    cta: "Request a walkthrough",
   },
 };
 
@@ -75,11 +75,11 @@ const howItWorksSteps: Step[] = [
     {
       icon: FileCheck2,
       title: 'AI Parses & Structures',
-      description: 'The AI model interprets the intent and structures it into a verifiable task.',
+      description: 'The AI interprets the intent and structures it into a reviewable task.',
     },
     {
       icon: Send,
-      title: 'Admin Reviews & Executes',
+      title: 'Admin Reviews & Approves',
       description: 'The final action is reviewed and approved by an admin before execution.',
     },
   ];
@@ -88,25 +88,25 @@ const featuresItems: Feature[] = [
     {
         icon: PenSquare,
         title: 'Announcement Orchestration',
-        description: 'Draft & send announcements across multiple channels from a single prompt.',
+        description: 'Draft & send announcements across channels from a single prompt.',
         label: 'communication'
       },
       {
         icon: ListTodo,
         title: 'Context-Aware Task Execution',
-        description: 'Turn ambiguous requests into structured tasks with pre-filled details for review.',
+        description: 'Converts requests into structured, review-ready actions.',
         label: 'workflow'
       },
       {
         icon: SearchCode,
         title: 'Information Retrieval',
-        description: 'Reduce time spent digging through messages by letting the AI find relevant details.',
+        description: 'Find key details without digging through message threads.',
         label: 'admin'
       },
       {
         icon: Layers3,
         title: 'Multi-Step Automation',
-        description: 'Chain multiple actions together for complex, automated workflows.',
+        description: 'Chain actions together for faster workflows.',
         label: 'orchestration'
       },
 ];
