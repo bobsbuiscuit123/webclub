@@ -1,11 +1,12 @@
 import Header from '@/components/landing-page/header';
 import Hero from '@/components/landing-page/hero';
+import Credibility from '@/components/landing-page/credibility';
 import Demo from '@/components/landing-page/demo';
 import HowItWorks, { type Step } from '@/components/landing-page/how-it-works';
 import Features, { type Feature } from '@/components/landing-page/features';
 import Relevance from '@/components/landing-page/relevance';
 import Contact from '@/components/landing-page/contact';
-import { PenSquare, ListTodo, SearchCode, Layers3, BotMessageSquare, FileCheck2, Send } from 'lucide-react';
+import { PenSquare, ListTodo, SearchCode, Layers3, BotMessageSquare, FileCheck2, Send, Zap, Workflow, Search } from 'lucide-react';
 
 const copy = {
   hero: {
@@ -14,6 +15,25 @@ const copy = {
     codeLine: "> Turn intent into action, not messages",
     primaryCta: "Watch the 30-second demo",
     secondaryCta: "Contact",
+  },
+  credibility: {
+    items: [
+      {
+        icon: Zap,
+        title: "AI Assistant",
+        description: "Executes tasks from natural language prompts."
+      },
+      {
+        icon: Workflow,
+        title: "Workflow Automation",
+        description: "Handles announcements, scheduling, and follow-ups."
+      },
+      {
+        icon: Search,
+        title: "Centralized Intelligence",
+        description: "Answers questions buried in your communication logs."
+      }
+    ]
   },
   demo: {
     label: "Live Product Demo",
@@ -25,7 +45,6 @@ const copy = {
     title: "How It Works",
     description: "A simple, transparent workflow designed for reliability and control.",
   },
-
   features: {
     title: "Capabilities",
     description: "ClubHub AI streamlines communication with powerful, task-based workflows.",
@@ -100,17 +119,17 @@ const heroHeadline = (
 
 export default function LandingPage() {
   return (
-    <div className="flex min-h-screen w-full flex-col bg-gradient-to-b from-[hsl(var(--gradient-start))] to-[hsl(var(--gradient-end))] text-foreground">
-      <div className="pointer-events-none absolute inset-0 z-0 bg-noise"></div>
+    <>
       <Header />
       <main className="flex-1">
         <Hero {...copy.hero} headline={heroHeadline} />
+        <Credibility items={copy.credibility.items} />
         <Demo {...copy.demo} />
         <HowItWorks {...copy.howItWorks} steps={howItWorksSteps} />
         <Features title={copy.features.title} description={copy.features.description} features={featuresItems} />
         <Relevance {...copy.relevance} />
         <Contact {...copy.contact} />
       </main>
-    </div>
+    </>
   );
 }
