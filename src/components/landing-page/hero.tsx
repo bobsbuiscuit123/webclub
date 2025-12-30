@@ -33,7 +33,7 @@ export default function Hero({ badge, headline, subheadline, description, primar
         <Badge variant="outline" className="mb-4 border-primary/30 bg-primary/10 text-primary">
           {badge}
         </Badge>
-        <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-6xl">
+        <h1 className="animate-fade-in-up text-4xl font-bold tracking-tight text-foreground sm:text-6xl">
           {headline}
         </h1>
         <p className="mt-6 text-lg leading-8 text-muted-foreground">
