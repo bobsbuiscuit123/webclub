@@ -20,7 +20,7 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
       </head>
       <body className="font-sans antialiased">
-        <div className="relative min-h-screen w-full bg-gradient-to-b from-[hsl(var(--gradient-start))] to-[hsl(var(--gradient-end))] text-foreground">
+        <div className="relative min-h-screen w-full bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,hsl(var(--gradient-accent)/0.3),transparent)] bg-[hsl(var(--gradient-end))] text-foreground">
           <div className="pointer-events-none absolute inset-0 z-0 bg-noise"></div>
           {children}
         </div>

@@ -35,7 +35,8 @@
     --radius: 0.75rem;
 
     --gradient-start: 160 50% 12%;
-    --gradient-end: 169 70% 14%;
+    --gradient-mid: 169 70% 14%;
+    --gradient-end: 180 80% 10%;
     --gradient-accent: 160 60% 30%;
   }
 
@@ -68,8 +69,9 @@
     --input: 165 35% 22%;
     --ring: 150 70% 50%;
 
-    --gradient-start: 165 80% 10%;
-    --gradient-end: 175 70% 12%;
+    --gradient-start: 180 80% 10%;
+    --gradient-mid: 169 70% 14%;
+    --gradient-end: 160 50% 12%;
     --gradient-accent: 160 60% 30%;
   }
 }

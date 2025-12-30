@@ -31,8 +31,7 @@ export default function Hero({ badge, headline, subheadline, codeLine, primaryCt
     <Section className="relative overflow-hidden pt-24 sm:pt-32 md:pt-40">
       <div className="absolute -top-1/4 left-0 -z-10 h-full w-full animate-fade-in">
         <div className="absolute inset-0 -z-20 bg-grid bg-center [mask-image:linear-gradient(to_bottom,white_1%,transparent_50%)]"></div>
-        <div className="absolute top-1/4 left-1/4 h-1/2 w-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[hsl(var(--gradient-accent))]/5 opacity-50 blur-[120px]"></div>
-        <div className="absolute top-1/2 right-0 h-1/2 w-1/2 translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/5 opacity-50 blur-[150px]"></div>
+        <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_farthest-side_at_50%_100%,hsl(var(--gradient-mid)),transparent)]"></div>
       </div>
       
       <div className="container mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 px-4 md:grid-cols-2 md:px-6">
