@@ -24,4 +24,12 @@ export default function Relevance({ badge, title, points }: RelevanceProps) {
             {points.map((point, index) => (
               <li key={index} className="flex items-start gap-4 animate-fade-in-up" style={{ animationDelay: `${0.4 + index * 0.1}s` }}>
                 <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
-                <span className="text-lg text-muted-foreground">{point}
+                <span className="text-lg text-muted-foreground">{point}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </Section>
+  );
+}
