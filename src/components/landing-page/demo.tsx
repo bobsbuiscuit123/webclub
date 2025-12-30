@@ -7,22 +7,21 @@ interface DemoProps {
   caption: string;
 }
 
-export default function Demo({ label, title, videoUrl, caption }: DemoProps) {
+export default function Demo({ label, videoUrl, caption }: DemoProps) {
   return (
     <Section id="demo" className="bg-background">
       <div className="mx-auto max-w-4xl text-center">
-        <div className="mb-4 inline-flex items-center rounded-md bg-accent px-3 py-1 text-sm font-medium text-accent-foreground animate-fade-in-up">
-            {label}
-        </div>
-        <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl animate-fade-in-up [animation-delay:0.2s]">
-          {title}
-        </h2>
-        <div className="mt-10 animate-fade-in-up [animation-delay:0.4s]">
-            <div className="rounded-2xl border border-border/50 bg-card shadow-xl">
-              <div className="flex h-8 items-center gap-2 rounded-t-2xl bg-muted/50 px-4">
-                  <div className="h-3 w-3 rounded-full bg-red-400"></div>
-                  <div className="h-3 w-3 rounded-full bg-yellow-400"></div>
-                  <div className="h-3 w-3 rounded-full bg-green-400"></div>
+        <div className="mt-10 animate-fade-in-up transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl [animation-delay:0.4s]">
+            <div className="relative rounded-2xl border border-border/50 bg-card shadow-xl">
+              <div className="flex h-11 items-center justify-between rounded-t-2xl bg-muted/50 px-4">
+                <div className="flex items-center gap-2">
+                    <div className="h-3 w-3 rounded-full bg-red-400"></div>
+                    <div className="h-3 w-3 rounded-full bg-yellow-400"></div>
+                    <div className="h-3 w-3 rounded-full bg-green-400"></div>
+                </div>
+                <div className="absolute left-1/2 -translate-x-1/2 rounded-md bg-background px-3 py-1 text-sm font-medium text-muted-foreground">
+                    {label}
+                </div>
               </div>
               <div className="aspect-video overflow-hidden rounded-b-2xl">
                 <iframe
