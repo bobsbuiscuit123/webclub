@@ -12,7 +12,7 @@ const copy = {
   hero: {
     badge: "Task-Based AI Workflows",
     subheadline: "AI workflows that turn school communication tasks into actions.",
-    codeLine: "> Turn intent into action, not messages",
+    codeLine: "> Turn intent into action",
     primaryCta: "Watch the 30-second demo",
     secondaryCta: "Contact",
   },
