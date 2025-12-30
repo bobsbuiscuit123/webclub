@@ -13,7 +13,7 @@ export default function Relevance({ badge, title, points }: RelevanceProps) {
     <Section id="relevance" className="border-t">
       <div className="mx-auto max-w-4xl">
         <div className="mt-12 rounded-2xl border border-primary/20 bg-muted/30 p-8 backdrop-blur-sm animate-fade-in-up [animation-delay:0.2s] relative">
-            <div className="absolute -left-px top-8 h-8 w-px bg-primary shadow-[0_0_12px_theme(colors.primary)]"></div>
+            <div className="absolute -left-px top-8 h-8 w-px bg-primary shadow-[0_0_12px_hsl(var(--primary))]"></div>
             <Badge variant="outline" className="mb-4 border-primary/30 bg-primary/10 text-primary font-mono text-xs">
                 {badge}
             </Badge>
@@ -24,12 +24,4 @@ export default function Relevance({ badge, title, points }: RelevanceProps) {
             {points.map((point, index) => (
               <li key={index} className="flex items-start gap-4 animate-fade-in-up" style={{ animationDelay: `${0.4 + index * 0.1}s` }}>
                 <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
-                <span className="text-lg text-muted-foreground">{point}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-    </Section>
-  );
-}
+                <span className="text-lg text-muted-foreground">{point}
