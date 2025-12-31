@@ -1,6 +1,4 @@
 import Section from './section';
-import { Button } from '@/components/ui/button';
-import Link from 'next/link';
 import { Mail } from 'lucide-react';
 
 interface ContactProps {
@@ -11,8 +9,6 @@ interface ContactProps {
 }
 
 export default function Contact({ title, description, email, cta }: ContactProps) {
-  const mailtoLink = `mailto:${email}?subject=ClubHub%20AI%20–%20Walkthrough%20Request`;
-
   return (
     <Section id="contact" className="border-t">
       <div className="mx-auto max-w-2xl text-center">
@@ -27,9 +23,6 @@ export default function Contact({ title, description, email, cta }: ContactProps
                 <Mail className="h-5 w-5 text-muted-foreground" />
                 <span>{email}</span>
             </div>
-            <Button asChild size="lg" className="border-foreground/20 bg-background text-foreground shadow-lg hover:shadow-primary/20 hover:-translate-y-1 transform transition-all hover:bg-accent">
-                <Link href={mailtoLink}>{cta}</Link>
-            </Button>
         </div>
       </div>
     </Section>
