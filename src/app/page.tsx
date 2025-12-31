@@ -11,8 +11,8 @@ import { PenSquare, ListTodo, SearchCode, Layers3, BotMessageSquare, FileCheck2,
 const copy = {
   hero: {
     badge: "Task-Based AI Workflows",
-    subheadline: "AI workflows that turn everyday school communication into completed tasks.",
-    codeLine: "› Turn intent into action",
+    subheadline: "AI-powered workflows that help school leaders draft, review, and execute communication tasks in seconds.",
+    codeLine: "› From request to execution — without extra back-and-forth",
     primaryCta: "Watch the 30-second demo",
     secondaryCta: "Request a walkthrough",
   },
