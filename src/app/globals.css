@@ -20,9 +20,10 @@
     --accent-foreground: 142.1 70% 25%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
-    --border: 150 20% 85%;
+    --border: 150 20% 80%;
     --input: 150 20% 90%;
     --ring: 142.1 76.2% 36.3%;
+    --radius: 1rem;
     --gradient-start: 150 50% 95%;
     --gradient-mid: 160 60% 92%;
     --gradient-end: 170 55% 90%;
@@ -49,6 +50,7 @@
     --border: 210 10% 30%;
     --input: 210 10% 25%;
     --ring: 142.1 76.2% 46.3%;
+    --radius: 1rem;
     --gradient-start: 180 20% 10%;
     --gradient-mid: 170 25% 12%;
     --gradient-end: 160 30% 10%;
