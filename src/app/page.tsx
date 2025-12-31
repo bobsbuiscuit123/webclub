@@ -40,7 +40,7 @@ const copy = {
     ]
   },
   demo: {
-    label: "Live Product Demo",
+    label: "Product Overview",
     title: "Product Demo",
     videoUrl: "https://www.youtube.com/embed/siH9rm05vBM",
     caption: "A short overview of how ClubHub AI turns natural language requests into completed tasks.",
