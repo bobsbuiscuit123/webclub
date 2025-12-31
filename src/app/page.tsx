@@ -1,37 +1,41 @@
 import Header from '@/components/landing-page/header';
 import Hero from '@/components/landing-page/hero';
-import Credibility from '@/components/landing-page/credibility';
+import CoreFeaturesSection from '@/components/landing-page/credibility';
 import Demo from '@/components/landing-page/demo';
 import HowItWorks, { type Step } from '@/components/landing-page/how-it-works';
-import Features, { type Feature } from '@/components/landing-page/features';
-import Relevance from '@/components/landing-page/relevance';
+import FeatureMatrix from '@/components/landing-page/feature-matrix';
 import Contact from '@/components/landing-page/contact';
-import { PenSquare, ListTodo, SearchCode, Layers3, BotMessageSquare, FileCheck2, Send, Zap, Workflow, Search } from 'lucide-react';
+import { PenSquare, ListTodo, Search, Workflow, BotMessageSquare, FileCheck2, Send, Zap, BrainCircuit, Info } from 'lucide-react';
 
 const copy = {
   hero: {
-    badge: "Task-Based AI Workflows",
-    subheadline: "AI-powered workflows that help school leaders draft, review, and execute communication tasks in seconds.",
-    codeLine: "› From request to execution — without extra back-and-forth",
-    primaryCta: "Watch the 30-second demo",
+    badge: "AI-Powered School Communication",
+    subheadline: "An AI-powered workspace that lets school leaders retrieve information, take action, and stay up to date — all from one place.",
+    codeLine: "› Ask questions, execute tasks, and surface key insights without digging through messages or dashboards.",
+    primaryCta: "Watch the 30-second product overview",
     secondaryCta: "Request a walkthrough",
   },
-  credibility: {
+  coreFeatures: {
     items: [
       {
         icon: Zap,
         title: "AI Assistant",
-        description: "Executes tasks from natural language prompts."
+        description: "Executes tasks and answers questions from natural language prompts."
       },
       {
         icon: Workflow,
         title: "Workflow Automation",
-        description: "Handles announcements, scheduling, and follow-ups."
+        description: "Handles announcements, multi-step scheduling, and automated follow-ups."
       },
       {
-        icon: Search,
-        title: "Centralized Intelligence",
-        description: "Surfaces answers from past messages, events, and announcements."
+        icon: Info,
+        title: "AI-Powered Retrieval",
+        description: "Surfaces answers and insights from forms, attendance, and past messages."
+      },
+      {
+        icon: BrainCircuit,
+        title: "Proactive Insights",
+        description: "Delivers summaries and suggests actions to keep you ahead."
       }
     ]
   },
@@ -39,28 +43,19 @@ const copy = {
     label: "Live Product Demo",
     title: "Product Demo",
     videoUrl: "https://www.youtube.com/embed/siH9rm05vBM",
-    caption: "Shows task-based AI generating announcements and automating admin workflows.",
+    caption: "A short overview of how ClubHub AI turns natural language requests into completed tasks.",
   },
   howItWorks: {
     title: "How It Works",
     description: "A simple, transparent workflow designed for reliability and control.",
   },
-  features: {
-    title: "Capabilities",
-    description: "ClubHub AI streamlines communication with powerful, task-based workflows.",
-  },
-  relevance: {
-    badge: "Built to scale",
-    title: "Built for clubs. Designed to scale across school communication.",
-    points: [
-      "Designed around real workflows used daily by student leaders and advisors.",
-      "Turns requests into actions — not more messages.",
-      "Works for clubs today and broader school use cases tomorrow."
-    ],
+  featureMatrix: {
+    title: "What ClubHub AI Can Do",
+    description: "A clear breakdown of how AI streamlines everyday communication tasks.",
   },
   contact: {
-    title: "Interested in a quick walkthrough?",
-    description: "Happy to share a short demo and discuss how these workflows could apply within your platform.",
+    title: "Interested in seeing how it works?",
+    description: "Happy to share a short demo and discuss how AI-driven workflows can simplify school communication.",
     email: "team@clubhub.ai",
     cta: "Request a walkthrough",
   },
@@ -69,47 +64,20 @@ const copy = {
 const howItWorksSteps: Step[] = [
     {
       icon: BotMessageSquare,
-      title: 'User Intent',
-      description: 'User provides a natural language prompt describing the desired outcome.',
+      title: 'Ask or Request',
+      description: 'User asks a question or describes a task in natural language.',
+    },
+    {
+      icon: Search,
+      title: 'AI Retrieves & Prepares',
+      description: 'The AI accesses relevant platform data and prepares a draft, summary, or action.',
     },
     {
       icon: FileCheck2,
-      title: 'AI Parses & Structures',
-      description: 'The AI interprets the intent and structures it into a reviewable task.',
-    },
-    {
-      icon: Send,
-      title: 'Admin Reviews & Approves',
-      description: 'The final action is reviewed and approved by an admin before execution.',
+      title: 'User Reviews & Executes',
+      description: 'The final insight or action is reviewed and approved by the user before execution.',
     },
   ];
-
-const featuresItems: Feature[] = [
-    {
-        icon: PenSquare,
-        title: 'Announcement Orchestration',
-        description: 'Draft & send announcements across channels from a single prompt.',
-        label: 'communication'
-      },
-      {
-        icon: ListTodo,
-        title: 'Context-Aware Task Execution',
-        description: 'Converts requests into structured, review-ready actions.',
-        label: 'workflow'
-      },
-      {
-        icon: SearchCode,
-        title: 'Information Retrieval',
-        description: 'Find key details without digging through message threads.',
-        label: 'admin'
-      },
-      {
-        icon: Layers3,
-        title: 'Multi-Step Automation',
-        description: 'Chain actions together for faster workflows.',
-        label: 'orchestration'
-      },
-];
 
 const heroHeadline = (
     <>
@@ -123,11 +91,10 @@ export default function LandingPage() {
       <Header />
       <main className="flex-1">
         <Hero {...copy.hero} headline={heroHeadline} />
-        <Credibility items={copy.credibility.items} />
+        <CoreFeaturesSection items={copy.coreFeatures.items} />
         <Demo {...copy.demo} />
+        <FeatureMatrix {...copy.featureMatrix} />
         <HowItWorks {...copy.howItWorks} steps={howItWorksSteps} />
-        <Features title={copy.features.title} description={copy.features.description} features={featuresItems} />
-        <Relevance {...copy.relevance} />
         <Contact {...copy.contact} />
       </main>
     </>

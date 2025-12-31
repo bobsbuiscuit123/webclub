@@ -33,8 +33,8 @@ export default function HowItWorks({ title, description, steps }: HowItWorksProp
             return (
               <div key={step.title} className="relative flex animate-fade-in-up" style={{ animationDelay: `${0.4 + i * 0.2}s` }}>
                 <Card className="flex flex-grow flex-col items-center text-center rounded-xl bg-transparent p-6 border-0 shadow-none">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-lg border bg-primary/10 text-primary">
-                    <Icon className="h-6 w-6" />
+                  <div className="flex h-16 w-16 items-center justify-center rounded-full border bg-primary/10 text-primary">
+                    <Icon className="h-8 w-8" />
                   </div>
                   <CardContent className="mt-4 p-0">
                     <h3 className="text-lg font-semibold">{step.title}</h3>

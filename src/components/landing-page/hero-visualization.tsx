@@ -13,18 +13,19 @@ export function HeroVisualization() {
                 <User className="h-5 w-5 text-primary" />
                 <h3 className="font-mono text-sm text-foreground">CLUB PRESIDENT</h3>
             </div>
-            <p className="mt-2 text-sm text-muted-foreground">"Draft a dues reminder and send it to all members."</p>
+            <p className="mt-2 text-sm text-muted-foreground">"How many members responded to the last form?"</p>
         </Card>
 
         <ArrowDown className="h-8 w-8 text-primary/50" />
 
         {/* Card 2 */}
-        <Card className="group relative flex h-24 w-64 flex-col items-start justify-center rounded-xl bg-card/60 p-4 text-left backdrop-blur-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary/10 border">
+        <Card className="group relative flex min-h-24 w-64 flex-col items-start justify-center rounded-xl bg-card/60 p-4 text-left backdrop-blur-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary/10 border">
              <div className="flex items-center gap-2">
                 <Bot className="h-5 w-5 text-primary" />
                 <h3 className="font-mono text-sm text-foreground">CLUBHUB AI</h3>
             </div>
-            <p className="mt-2 text-sm text-muted-foreground">Task prepared: Announcement drafted and ready to send</p>
+            <p className="mt-2 text-sm text-muted-foreground">Summary generated · Action options available</p>
+            <p className="mt-1 text-xs text-muted-foreground/70">Suggested: Send reminder, filter recipients, or take no action.</p>
         </Card>
 
         {/* Glows */}
