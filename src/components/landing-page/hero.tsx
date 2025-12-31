@@ -55,7 +55,7 @@ export default function Hero({ badge, headline, subheadline, codeLine, primaryCt
                 <span className="relative">{primaryCta}</span>
               </Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="rounded-lg border-white/20 bg-white/5 text-white/80 backdrop-blur-sm transition-colors hover:border-white/40 hover:bg-white/10 hover:text-white">
+            <Button asChild size="lg" className="border-foreground/20 bg-background text-foreground shadow-lg hover:shadow-primary/20 hover:-translate-y-1 transform transition-all hover:bg-accent rounded-lg">
               <Link href="#contact" onClick={handleScroll}>
                 {secondaryCta}
               </Link>
