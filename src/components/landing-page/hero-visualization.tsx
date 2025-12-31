@@ -1,6 +1,6 @@
 'use client';
 
-import { ArrowRight, Bot, User } from "lucide-react";
+import { ArrowDown, Bot, User } from "lucide-react";
 import { Card } from "../ui/card";
 
 export function HeroVisualization() {
@@ -16,7 +16,7 @@ export function HeroVisualization() {
             <p className="mt-2 text-sm text-muted-foreground">"Draft a dues reminder and send it to all members."</p>
         </Card>
 
-        <ArrowRight className="h-8 w-8 text-primary/50" />
+        <ArrowDown className="h-8 w-8 text-primary/50" />
 
         {/* Card 2 */}
         <Card className="group relative flex h-24 w-64 flex-col items-start justify-center rounded-xl bg-card/60 p-4 text-left backdrop-blur-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary/10 border">
