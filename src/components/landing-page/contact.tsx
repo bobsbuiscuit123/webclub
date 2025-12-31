@@ -27,7 +27,7 @@ export default function Contact({ title, description, email, cta }: ContactProps
                 <Mail className="h-5 w-5 text-muted-foreground" />
                 <span>{email}</span>
             </div>
-            <Button asChild size="lg" className="shadow-lg hover:shadow-primary/20 hover:-translate-y-1 transform transition-all">
+            <Button asChild variant="outline" size="lg" className="border-black bg-transparent text-black hover:bg-black hover:text-white shadow-lg hover:shadow-primary/20 hover:-translate-y-1 transform transition-all">
                 <Link href={mailtoLink}>{cta}</Link>
             </Button>
         </div>
