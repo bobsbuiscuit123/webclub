@@ -8,7 +8,7 @@ export function HeroVisualization() {
     <div className="relative flex h-full min-h-[300px] w-full items-center justify-center p-4">
       <div className="relative flex flex-col items-center gap-4">
         {/* Card 1 */}
-        <Card className="group relative flex h-24 w-64 flex-col items-start justify-center rounded-xl bg-white/5 p-4 text-left backdrop-blur-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary/10 border border-white/10">
+        <Card className="group relative flex h-24 w-64 flex-col items-start justify-center rounded-xl bg-card/60 p-4 text-left backdrop-blur-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary/10 border">
             <div className="flex items-center gap-2">
                 <User className="h-5 w-5 text-primary" />
                 <h3 className="font-mono text-sm text-foreground">USER_INTENT</h3>
@@ -19,7 +19,7 @@ export function HeroVisualization() {
         <ArrowRight className="h-8 w-8 text-primary/50" />
 
         {/* Card 2 */}
-        <Card className="group relative flex h-24 w-64 flex-col items-start justify-center rounded-xl bg-white/5 p-4 text-left backdrop-blur-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary/10 border border-white/10">
+        <Card className="group relative flex h-24 w-64 flex-col items-start justify-center rounded-xl bg-card/60 p-4 text-left backdrop-blur-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary/10 border">
              <div className="flex items-center gap-2">
                 <Bot className="h-5 w-5 text-primary" />
                 <h3 className="font-mono text-sm text-foreground">AI_ACTION</h3>

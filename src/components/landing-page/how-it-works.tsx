@@ -17,7 +17,7 @@ interface HowItWorksProps {
 
 export default function HowItWorks({ title, description, steps }: HowItWorksProps) {
   return (
-    <Section id="how-it-works" className="border-t border-white/10">
+    <Section id="how-it-works" className="border-t">
       <div className="mx-auto max-w-5xl text-center">
         <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl animate-fade-in-up">
           {title}

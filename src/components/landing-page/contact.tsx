@@ -14,7 +14,7 @@ export default function Contact({ title, description, email, cta }: ContactProps
   const mailtoLink = `mailto:${email}?subject=ClubHub%20AI%20–%20Walkthrough%20Request`;
 
   return (
-    <Section id="contact" className="border-t border-white/10">
+    <Section id="contact" className="border-t">
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
           {title}

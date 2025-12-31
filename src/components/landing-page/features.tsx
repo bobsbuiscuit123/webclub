@@ -18,7 +18,7 @@ interface FeaturesProps {
 
 export default function Features({ title, description, features }: FeaturesProps) {
   return (
-    <Section id="features" className="border-t border-white/10">
+    <Section id="features" className="border-t">
       <div className="mx-auto max-w-5xl text-center">
         <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl animate-fade-in-up">
           {title}
@@ -31,7 +31,7 @@ export default function Features({ title, description, features }: FeaturesProps
         {features.map((feature, i) => {
           const Icon = feature.icon;
           return (
-            <Card key={feature.title} className="group relative flex flex-col rounded-xl bg-card/60 backdrop-blur-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10 animate-fade-in-up border border-white/10" style={{ animationDelay: `${0.4 + i * 0.1}s` }}>
+            <Card key={feature.title} className="group relative flex flex-col rounded-xl bg-card/60 backdrop-blur-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10 animate-fade-in-up border" style={{ animationDelay: `${0.4 + i * 0.1}s` }}>
               <CardHeader>
                 <div className="relative">
                     <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 transition-colors group-hover:bg-primary/20">

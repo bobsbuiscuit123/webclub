@@ -21,7 +21,7 @@ export default function Credibility({ items }: CredibilityProps) {
           return (
             <Card 
               key={item.title} 
-              className="group relative flex flex-col rounded-xl border border-white/10 bg-white/5 p-6 text-left backdrop-blur-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary/10 animate-fade-in-up" 
+              className="group relative flex flex-col rounded-xl border bg-card/60 p-6 text-left backdrop-blur-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary/10 animate-fade-in-up" 
               style={{ animationDelay: `${0.2 + i * 0.1}s` }}
             >
               <CardHeader className="flex flex-row items-center gap-4 p-0">
