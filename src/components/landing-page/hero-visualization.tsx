@@ -11,7 +11,7 @@ export function HeroVisualization() {
         <Card className="group relative flex h-24 w-64 flex-col items-start justify-center rounded-xl bg-card/60 p-4 text-left backdrop-blur-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary/10 border">
             <div className="flex items-center gap-2">
                 <User className="h-5 w-5 text-primary" />
-                <h3 className="font-mono text-sm text-foreground">USER_INTENT</h3>
+                <h3 className="font-mono text-sm text-foreground">CLUB PRESIDENT</h3>
             </div>
             <p className="mt-2 text-sm text-muted-foreground">"Draft a reminder about dues and send it to members."</p>
         </Card>
@@ -22,7 +22,7 @@ export function HeroVisualization() {
         <Card className="group relative flex h-24 w-64 flex-col items-start justify-center rounded-xl bg-card/60 p-4 text-left backdrop-blur-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary/10 border">
              <div className="flex items-center gap-2">
                 <Bot className="h-5 w-5 text-primary" />
-                <h3 className="font-mono text-sm text-foreground">AI_ACTION</h3>
+                <h3 className="font-mono text-sm text-foreground">CLUBHUB AI</h3>
             </div>
             <p className="mt-2 text-sm text-muted-foreground">[TASK]: Draft + Send Announcement</p>
         </Card>
