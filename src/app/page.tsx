@@ -56,7 +56,7 @@ const copy = {
   contact: {
     title: "Interested in seeing how it works?",
     description: "Happy to share a short demo and discuss how AI-driven workflows can simplify school communication.",
-    email: "team@clubhub.ai",
+    email: "pratheek@clubhub-ai.com",
     cta: "Request a walkthrough",
   },
 };
