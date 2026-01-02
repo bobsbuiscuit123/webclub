@@ -85,3 +85,10 @@
     opacity: 0.03;
   }
 }
+
+/* Hide Next.js dev overlay indicator */
+@layer base {
+  nextjs-portal {
+    display: none;
+  }
+}
