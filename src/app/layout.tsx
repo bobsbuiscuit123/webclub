@@ -5,6 +5,13 @@ import { Toaster } from '@/components/ui/toaster';
 export const metadata: Metadata = {
   title: 'ClubHub AI',
   description: 'AI workflows that turn school communication tasks into actions.',
+  icons: {
+    icon: [
+      { url: '/icon.svg', type: 'image/svg+xml' },
+      { url: '/icon.png', type: 'image/png' },
+      { url: '/favicon.ico', type: 'image/x-icon' },
+    ],
+  },
 };
 
 export default function RootLayout({
