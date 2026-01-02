@@ -1,10 +1,5 @@
-const nextConfig = {
-  output: "export",
-  basePath: "/webclub",
-  trailingSlash: true,
-  images: {
-    unoptimized: true,
-  },
-};
+import type {NextConfig} from 'next';
+
+const nextConfig: NextConfig = {};
 
 export default nextConfig;

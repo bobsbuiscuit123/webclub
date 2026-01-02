@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Logo">
-  <g fill="none" stroke="#16a34a" stroke-width="4" stroke-linejoin="round">
-    <path d="M32 10L10 20l22 10 22-10-22-10z"/>
-    <path d="M32 22L10 32l22 10 22-10-22-10z"/>
-    <path d="M32 34L10 44l22 10 22-10-22-10z"/>
-  </g>
-</svg>
