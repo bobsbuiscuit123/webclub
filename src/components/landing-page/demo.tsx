@@ -9,9 +9,9 @@ interface DemoProps {
 
 export default function Demo({ label, videoUrl, caption }: DemoProps) {
   return (
-    <Section id="demo">
+    <Section>
       <div className="mx-auto max-w-4xl text-center">
-        <div className="mt-10 animate-fade-in-up transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl [animation-delay:0.4s]">
+        <div id="demo" className="mt-10 scroll-mt-24 animate-fade-in-up transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl [animation-delay:0.4s]">
             <div className="relative rounded-2xl border bg-card/50 backdrop-blur-sm shadow-xl">
               <div className="flex h-11 items-center justify-between rounded-t-2xl bg-muted/50 px-4">
                 <div className="flex items-center gap-2">

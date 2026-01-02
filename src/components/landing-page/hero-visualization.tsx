@@ -5,7 +5,7 @@ import { Card } from "../ui/card";
 
 export function HeroVisualization() {
   return (
-    <div className="relative flex h-full min-h-[300px] w-full items-center justify-center p-4">
+    <div className="relative flex h-full min-h-[300px] w-full items-center justify-center overflow-hidden p-4">
       <div className="relative flex flex-col items-center gap-4">
         {/* Card 1 */}
         <Card className="group relative flex h-24 w-64 flex-col items-start justify-center rounded-xl bg-card/60 p-4 text-left backdrop-blur-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary/10 border">
@@ -24,7 +24,7 @@ export function HeroVisualization() {
                 <Bot className="h-5 w-5 text-primary" />
                 <h3 className="font-mono text-sm text-foreground">CLUBHUB AI</h3>
             </div>
-            <p className="mt-2 text-sm text-muted-foreground">Summary generated · Action options available</p>
+            <p className="mt-2 text-sm text-muted-foreground">Summary generated. Action options available.</p>
             <p className="mt-1 text-xs text-muted-foreground/70">Suggested: Send reminder, filter recipients, or take no action.</p>
         </Card>
 

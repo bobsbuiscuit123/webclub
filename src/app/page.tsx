@@ -10,8 +10,8 @@ import { PenSquare, ListTodo, Search, Workflow, BotMessageSquare, FileCheck2, Se
 const copy = {
   hero: {
     badge: "AI-Powered School Communication",
-    subheadline: "An AI-powered workspace that lets school leaders retrieve information, take action, and stay up to date — all from one place.",
-    codeLine: "› Ask questions, execute tasks, and surface key insights without digging through messages or dashboards.",
+    subheadline: "An AI-powered workspace that lets school leaders retrieve information, take action, and stay up to date, all from one place.",
+    codeLine: "Ask questions, execute tasks, and surface key insights without digging through messages or dashboards.",
     primaryCta: "Watch the 30-second product overview",
     secondaryCta: "Request a walkthrough",
   },
@@ -81,7 +81,10 @@ const howItWorksSteps: Step[] = [
 
 const heroHeadline = (
     <>
-      ClubHub <span className="bg-gradient-to-r from-primary to-emerald-400 bg-clip-text text-transparent">AI</span>
+      ClubHub{' '}
+      <span className="text-primary supports-[background-clip:text]:bg-gradient-to-r supports-[background-clip:text]:from-primary supports-[background-clip:text]:to-emerald-400 supports-[background-clip:text]:bg-clip-text supports-[background-clip:text]:text-transparent">
+        AI
+      </span>
     </>
   );
 
