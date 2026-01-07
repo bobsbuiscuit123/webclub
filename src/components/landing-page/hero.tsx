@@ -24,6 +24,7 @@ export default function Hero({ badge, headline, subheadline, codeLine, primaryCt
     const elem = document.getElementById(targetId);
     elem?.scrollIntoView({
       behavior: 'smooth',
+      block: 'center',
     });
   };
 
